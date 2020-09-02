@@ -24,14 +24,13 @@ public class InventoryRetailStore extends SimpleRetailStore {
 
     @Override
     public void buy(Product product) {
-        Inventory.add(product);
+        this.Inventory.add(product);
         this.buyBalance -= product.getPriceWhenBuy();
-
     }
 
     @Override
     public void sell(Product product) {
-        Inventory.remove(product);
+        this.Inventory.remove(product);
         this.sellBalance += product.getPriceWhenSell();
     }
 

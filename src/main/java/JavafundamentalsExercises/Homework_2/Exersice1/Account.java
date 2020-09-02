@@ -15,7 +15,7 @@ public class Account {
 
     /**
      * This method accepted as argument a possitive value of withdrawAmmount and
-     * then deduct it from the account
+     * then withdraw it from the account
      *
      * @param withdrawAmount
      * @return true if withdraw has been succeed or false if balance of account is
@@ -32,8 +32,8 @@ public class Account {
     }
 
     /**
-     * This method accepted as argument a possitive value of withdrawAmmount and
-     * then deduct it from the account
+     * This method accepted as argument a positive value of deposit Amount and
+     * then deposit it from the account
      *
      * @param depositAmount
      * @return true if deposit has been succeed or false if the amount of deposit
@@ -60,13 +60,13 @@ public class Account {
         System.out.println("The new balance is " + this.getBalance());
         System.out.println("Now deposit 200 euros from account " + this.deposit(200));
         System.out.println("The new balance is " + this.getBalance());
-        System.out.println("Now try to widthdrow 1000 from the account" + this.withdraw(1000));
+        System.out.println("Now try to widthdraw 1000 from the account" + this.withdraw(1000));
 
         System.out.println("The new balance is " + this.getBalance()
                 + " because deposit amount is greater than balance");
-        System.out.println("Now try to widthdrow 250 from the account" + this.withdraw(250));
+        System.out.println("Now try to widthdraw 250 from the account" + this.withdraw(250));
         System.out.println("The new balance is " + this.getBalance());
-        System.out.println("The nnumber of transactions is " + this.getNumberOfTransactions());
+        System.out.println("The number of transactions is " + this.getNumberOfTransactions());
 
     }
 
