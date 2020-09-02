@@ -54,19 +54,20 @@ public class Account {
                 +this.getBalance()+" euros and its category is "+this.getCategory());
         this.setCategory(Category.PREMIUM);
         this.setOwner("Georgios");
-        System.out.println("The new name of owner account after update is "+this.getOwner()+
-                "has "+this.getBalance()+" euros and its new category is "
-                +this.getCategory());
-        System.out.println("Add 100 euros into account"+this.deposit(100));
-        System.out.println("The new balance is "+this.getBalance());
-        System.out.println("Now deposit 200 euros from account "+this.deposit(200));
-        System.out.println("The new balance is "+this.getBalance());
-        System.out.println("Now try to widthdrow 1000 from the account"+this.withdraw(1000));
+        System.out.println("The new name of owner account after update is " + this.getOwner() +
+                "has " + this.getBalance() + " euros and its new category is "
+                + this.getCategory());
+        System.out.println("Add 100 euros into account" + this.deposit(100));
+        System.out.println("The new balance is " + this.getBalance());
+        System.out.println("Now deposit 200 euros from account " + this.deposit(200));
+        System.out.println("The new balance is " + this.getBalance());
+        System.out.println("Now try to widthdrow 1000 from the account" + this.withdraw(1000));
 
-        System.out.println("The new balance is "+this.getBalance()
-                +" because deposit amount is greater than balance");
-        System.out.println("Now try to widthdrow 250 from the account"+this.withdraw(250));
-        System.out.println("The new balance is "+this.getBalance());
+        System.out.println("The new balance is " + this.getBalance()
+                + " because deposit amount is greater than balance");
+        System.out.println("Now try to widthdrow 250 from the account" + this.withdraw(250));
+        System.out.println("The new balance is " + this.getBalance());
+        System.out.println("The nnumber of transactions is " + this.getNumberOfTransactions());
 
     }
 
