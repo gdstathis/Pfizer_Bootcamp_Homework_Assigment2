@@ -6,7 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Account {
-    /*Basic informations for account*/
+    /*Basic details for account*/
     private String Owner;
     private double balance;
     private int numberOfTransactions;
@@ -48,10 +48,9 @@ public class Account {
         return false;
     }
 
-    public void TesterMethod(){
-        //Account account=new Account("Owner",300.50,0,Category.BASIC);
-        System.out.println("The owner name of created account is "+this.getOwner()+"has "
-                +this.getBalance()+" euros and its category is "+this.getCategory());
+    public void testerMethod() {
+        System.out.println("The owner name of created account is " + this.getOwner() + "has "
+                + this.getBalance() + " euros and its category is " + this.getCategory());
         this.setCategory(Category.PREMIUM);
         this.setOwner("Georgios");
         System.out.println("The new name of owner account after update is " + this.getOwner() +

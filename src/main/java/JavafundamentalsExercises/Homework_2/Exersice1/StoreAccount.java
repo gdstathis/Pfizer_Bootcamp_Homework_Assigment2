@@ -16,7 +16,7 @@ public class StoreAccount extends Account {
         this.accountCategory = category;
     }
 
-    public void TesterMethod() {
+    public void testerMethod() {
         System.out.println("The new store account has details" + "store name"
                 + this.getStoreName() + "category" + this.accountCategory);
         this.setBalance(250);
@@ -27,8 +27,8 @@ public class StoreAccount extends Account {
         changeCategory(Category.MID);
         this.deposit(250);
         this.withdraw(250);
-        System.out.println("The balance is" + this.getBalance() + "and the number of transactions is"
-                + getNumberOfTransactions());
+        System.out.println("The balance is" + this.getBalance()
+                + "and the number of transactions is" + getNumberOfTransactions());
     }
 
 }
